@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import backgroundImage from '../../assets/bg.jpeg';
 import profile from '../../assets/profile.jpg';
 const Header = () => (
@@ -13,10 +14,10 @@ const Header = () => (
       <div className="inner-header-right">
         <ul>
           <li>
-            <a href="/about">About</a>
+            <Link to="/about">About</Link>
           </li>
           <li>
-            <a href="/projects">Projects</a>
+            <Link to="/projects">Projects</Link>
           </li>
         </ul>
       </div>

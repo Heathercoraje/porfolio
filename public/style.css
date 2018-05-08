@@ -16,6 +16,10 @@ li {
 a {
   text-decoration: none;
 }
+
+.devicon {
+  margin: 5px;
+}
 .inner-container {
   width: 50%;
   margin: 0 auto;
@@ -41,7 +45,7 @@ a:hover {
 }
 .header {
   color: #eee;
-  height: 700px;
+  height: 650px;
   background-repeat: no-repeat;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url('../assets/bg.jpeg');
@@ -85,21 +89,17 @@ a:hover {
 
 /* main */
 
-.main {
-  /* min-height: 500px; */
-}
-
 .main-title {
   color: #34a5b3;
   letter-spacing: 1.2px;
   margin-top: 50px;
-  font-size: 4.5vmin;
+  font-size: 5vmin;
 }
 .main-article {
   font-size: 2.3vmin;
   margin: 30px 0 40px 0;
   letter-spacing: 1px;
-  color: #101010;
+  color: #222222;
 }
 .pomotris-link {
   letter-spacing: 1.2px;
@@ -143,4 +143,26 @@ a:hover {
 .profile-social-links > li > a {
   color: #585858;
   font-size: 1.3rem;
+}
+
+/* projects */
+.helper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 25px;
+  font-size: 25px;
+  font-weight: 600;
+}
+.project-container {
+  padding: 25px 0 10px 0;
+  border-bottom: 0.3px solid #585858;
+}
+
+.project-description {
+  margin-bottom: 40px;
+}
+.icons-container {
+  margin-left: 20px;
 }
