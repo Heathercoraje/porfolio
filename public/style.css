@@ -1,0 +1,139 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Gudea';
+}
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+.inner-container {
+  width: 50%;
+  margin: 0 auto;
+}
+/* header */
+li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 25px;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+}
+
+a:hover {
+  color: #34a5b3 !important;
+}
+.inner-header-right > ul > li > a {
+  text-decoration: none;
+  color: #eee;
+}
+.header {
+  color: #eee;
+  height: 700px;
+  background-repeat: no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url('../assets/bg.jpeg');
+  background-size: 100%;
+}
+.inner-header-container {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px #eee solid;
+  padding: 40px 5px 20px 5px;
+}
+.inner-header-left {
+  float: left;
+}
+.name {
+  margin: 10px 0;
+  font-size: 30px;
+  letter-spacing: 1.5px;
+}
+.title {
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+.inner-header-right {
+  padding-top: 50px;
+}
+
+.profileImage-container {
+  margin: 0 auto;
+  padding: 10vh 0;
+  width: 50%;
+  text-align: center;
+}
+.profileImage {
+  border-radius: 50%;
+  width: 300px;
+}
+
+/* main */
+
+.main {
+  /* min-height: 500px; */
+}
+
+.main-title {
+  color: #34a5b3;
+  letter-spacing: 1.2px;
+  margin-top: 50px;
+  font-size: 4.5vmin;
+}
+.main-article {
+  font-size: 2.3vmin;
+  margin: 30px 0 40px 0;
+  color: #585858;
+}
+.pomotris-link {
+  letter-spacing: 1.2px;
+  color: #34a5b3;
+}
+
+.button-like {
+  padding: 10px 50px;
+  border: 2px solid #34a5b3;
+  border-radius: 5px;
+  color: #34a5b3;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+.button-like > a {
+  text-decoration: none;
+  color: #34a5b3;
+}
+.footer-container {
+  border-top: 1px solid #c3c3c3;
+  width: 100vw;
+  height: 8vh;
+  margin-top: 8vh;
+  text-align: center;
+  background-color: gainsboro;
+}
+.footer {
+  height: 100%;
+}
+.profile-social-links {
+  height: 100%;
+  margin: 0 auto;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  color: #585858;
+}
+
+.profile-social-links > li > a {
+  color: #585858;
+  font-size: 1.3rem;
+}
