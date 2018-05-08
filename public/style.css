@@ -13,6 +13,9 @@ li {
   margin: 0;
   padding: 0;
 }
+a {
+  text-decoration: none;
+}
 .inner-container {
   width: 50%;
   margin: 0 auto;
@@ -28,6 +31,9 @@ li {
 
 a:hover {
   color: #34a5b3 !important;
+}
+.inner-header-left > a {
+  color: #eee;
 }
 .inner-header-right > ul > li > a {
   text-decoration: none;
@@ -74,7 +80,7 @@ a:hover {
 }
 .profileImage {
   border-radius: 50%;
-  width: 300px;
+  width: 250px;
 }
 
 /* main */
@@ -92,7 +98,8 @@ a:hover {
 .main-article {
   font-size: 2.3vmin;
   margin: 30px 0 40px 0;
-  color: #585858;
+  letter-spacing: 1px;
+  color: #101010;
 }
 .pomotris-link {
   letter-spacing: 1.2px;
@@ -100,7 +107,7 @@ a:hover {
 }
 
 .button-like {
-  padding: 10px 50px;
+  padding: 10px 40px;
   border: 2px solid #34a5b3;
   border-radius: 5px;
   color: #34a5b3;
