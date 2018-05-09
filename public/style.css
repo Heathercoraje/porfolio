@@ -1,9 +1,5 @@
 html,
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Gudea';
-}
+body,
 h1,
 h2,
 h3,
@@ -12,11 +8,27 @@ ul,
 li {
   margin: 0;
   padding: 0;
+  font-family: 'Gudea';
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.devicon {
+  margin: 5px;
+}
+
+.socialIcon:hover,
+.tab:hover {
+  color: #34a5b3;
+}
+/* core of mobile responsiveness */
 .inner-container {
   width: 50%;
   margin: 0 auto;
 }
+
 /* header */
 li {
   list-style: none;
@@ -26,16 +38,14 @@ li {
   letter-spacing: 1.5px;
 }
 
-a:hover {
-  color: #34a5b3 !important;
-}
+.inner-header-left > a,
 .inner-header-right > ul > li > a {
-  text-decoration: none;
   color: #eee;
 }
+
 .header {
   color: #eee;
-  height: 700px;
+  height: 650px;
   background-repeat: no-repeat;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url('../assets/bg.jpeg');
@@ -43,14 +53,17 @@ a:hover {
 }
 .inner-header-container {
   height: 10vh;
+  padding: 40px 5px 20px 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px #eee solid;
-  padding: 40px 5px 20px 5px;
 }
 .inner-header-left {
   float: left;
+}
+.inner-header-right {
+  padding-top: 50px;
 }
 .name {
   margin: 10px 0;
@@ -62,70 +75,68 @@ a:hover {
   font-size: 18px;
   letter-spacing: 1px;
 }
-.inner-header-right {
-  padding-top: 50px;
-}
 
 .profileImage-container {
   margin: 0 auto;
-  padding: 10vh 0;
   width: 50%;
+  padding: 10vh 0;
   text-align: center;
 }
 .profileImage {
   border-radius: 50%;
-  width: 300px;
+  width: 250px;
 }
 
 /* main */
 
-.main {
-  /* min-height: 500px; */
-}
-
 .main-title {
   color: #34a5b3;
+  font-size: 5vmin;
   letter-spacing: 1.2px;
   margin-top: 50px;
-  font-size: 4.5vmin;
 }
 .main-article {
+  color: #222222;
   font-size: 2.3vmin;
+  letter-spacing: 1px;
   margin: 30px 0 40px 0;
-  color: #585858;
 }
 .pomotris-link {
-  letter-spacing: 1.2px;
   color: #34a5b3;
+  letter-spacing: 1.2px;
 }
-
 .button-like {
-  padding: 10px 50px;
-  border: 2px solid #34a5b3;
-  border-radius: 5px;
   color: #34a5b3;
   font-weight: 700;
   letter-spacing: 1.2px;
+  border: 2px solid #34a5b3;
+  border-radius: 5px;
+  padding: 10px 40px;
 }
-.button-like > a {
-  text-decoration: none;
+.button-like {
   color: #34a5b3;
 }
+.button-like:hover {
+  color: #eee;
+  background-color: #34a5b3;
+}
+
+/* footer */
 .footer-container {
-  border-top: 1px solid #c3c3c3;
   width: 100vw;
   height: 8vh;
-  margin-top: 8vh;
-  text-align: center;
   background-color: gainsboro;
+  text-align: center;
+  margin-top: 8vh;
+  border-top: 1px solid #c3c3c3;
 }
 .footer {
   height: 100%;
 }
 .profile-social-links {
+  width: 50%;
   height: 100%;
   margin: 0 auto;
-  width: 50%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -135,5 +146,33 @@ a:hover {
 
 .profile-social-links > li > a {
   color: #585858;
-  font-size: 1.3rem;
+  font-size: 20px;
+}
+
+/* projects */
+
+.project-container {
+  padding: 25px 0 10px 0;
+  border-bottom: 0.3px solid #585858;
+}
+
+.helper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 25px;
+  font-size: 25px;
+  font-weight: 600;
+}
+.project-name:hover,
+.devicon-github-plain:hover {
+  color: #34a5b3;
+  cursor: pointer;
+}
+.project-description {
+  margin-bottom: 40px;
+}
+.icons-container {
+  margin-left: 15px;
 }

@@ -1,23 +1,27 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import backgroundImage from '../../assets/bg.jpeg';
 import profile from '../../assets/profile.jpg';
 const Header = () => (
   <div className="header">
     <div className="inner-container inner-header-container">
       <div className="inner-header-left">
-        <p className="name">Heuikyung Heather Yun</p>
-        <p className="title"> &lt;/&gt; web developer &lt;/&gt;</p>
+        <a href="/" className="tab">
+          <p className="name">Heuikyung Heather Yun</p>
+          <p className="title"> &lt;/&gt; web developer &lt;/&gt;</p>
+        </a>
       </div>
       <div className="inner-header-right">
         <ul>
           <li>
-            <a href="/">Home</a>
+            <Link to="/about" className="tab">
+              About
+            </Link>
           </li>
           <li>
-            <a href="/about">About</a>
-          </li>
-          <li>
-            <a href="/projects">Projects</a>
+            <Link to="/projects" className="tab">
+              Projects
+            </Link>
           </li>
         </ul>
       </div>

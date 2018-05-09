@@ -1,3 +1,5 @@
 node_modules/
-webpack.config/
+webpack.base.config.js
+webpack.dev.config.js
 assets/
+data.js
