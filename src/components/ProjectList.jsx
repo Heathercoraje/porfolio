@@ -3,14 +3,29 @@ import classNames from 'classnames';
 import { icons, projects } from './../../data.js';
 
 class Project extends Component {
+  openGithub = github => {
+    window.open(`https://github.com/${github}`, '_blank');
+  };
+  openProject = url => {
+    window.open(`https://${url}`, '_blank');
+  };
   render() {
-    const { name, github, description, icons } = this.props;
+    const { name, github, url, description, icons } = this.props;
     return (
       <div className="project-container">
         <div className="helper">
-          <p className="project-name">{name}</p>
+          <p className="project-name" onClick={() => this.openProject(url)}>
+            {name}
+          </p>
           <div className="icons-container">
-            {icons.map(icon => <i className={icon.className} />)}
+            <i
+              className="devicon devicon-github-plain"
+              onClick={() => this.openGithub(github)}
+              style={{ cursor: 'pointer' }}
+            />
+            {icons.map(icon => (
+              <i className={icon.className} key={icon.name} />
+            ))}
           </div>
         </div>
         <p className="project-description">{description}</p>

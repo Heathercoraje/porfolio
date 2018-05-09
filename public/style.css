@@ -159,7 +159,10 @@ a:hover {
   padding: 25px 0 10px 0;
   border-bottom: 0.3px solid #585858;
 }
-
+.project-name:hover {
+  color: #34a5b3;
+  cursor: pointer;
+}
 .project-description {
   margin-bottom: 40px;
 }
