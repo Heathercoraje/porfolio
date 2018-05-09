@@ -24,10 +24,14 @@ const About = () => (
       indigenous communities. <br />
       <br />
       Heather practices yoga, trains for marathrons and recently started to
-      enjoy liftings. This year, she aims to try out thriathlon. Click{' '}
-      <strong>here</strong> to see her full resume.
+      enjoy liftings. This year, she aims to try out thriathlon.<br />
       <br />
     </p>
+    <span className="button-like">
+      <a target="_blank" href="https://github.com/Heathercoraje/pomotris-vh">
+        Full Resume <i className="far fa-file-alt" />
+      </a>
+    </span>
   </div>
 );
 
