@@ -6,7 +6,7 @@ const Header = () => (
   <div className="header">
     <div className="inner-container inner-header-container">
       <div className="inner-header-left">
-        <a href="/">
+        <a href="/" className="tab">
           <p className="name">Heuikyung Heather Yun</p>
           <p className="title"> &lt;/&gt; web developer &lt;/&gt;</p>
         </a>
@@ -14,10 +14,14 @@ const Header = () => (
       <div className="inner-header-right">
         <ul>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/about" className="tab">
+              About
+            </Link>
           </li>
           <li>
-            <Link to="/projects">Projects</Link>
+            <Link to="/projects" className="tab">
+              Projects
+            </Link>
           </li>
         </ul>
       </div>

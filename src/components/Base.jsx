@@ -12,11 +12,13 @@ const Base = () => (
       color for each catagory of tasks. Currently, Heather is working on the
       second sprint of Pomotris project.
     </p>
-    <span className="button-like">
-      <a target="_blank" href="https://github.com/Heathercoraje/pomotris-vh">
-        Visit Repo <i className="fab fa-github" />
-      </a>
-    </span>
+    <a
+      target="_blank"
+      href="https://github.com/Heathercoraje/pomotris-vh"
+      className="button-like"
+    >
+      Visit Repo <i className="fab fa-github" />
+    </a>
   </div>
 );
 

@@ -27,11 +27,13 @@ const About = () => (
       enjoy liftings. This year, she aims to try out thriathlon.<br />
       <br />
     </p>
-    <span className="button-like">
-      <a target="_blank" href="https://github.com/Heathercoraje/pomotris-vh">
-        Full Resume <i className="far fa-file-alt" />
-      </a>
-    </span>
+    <a
+      className="button-like"
+      target="_blank"
+      href="https://github.com/Heathercoraje/pomotris-vh"
+    >
+      Full Resume <i className="far fa-file-alt" />
+    </a>
   </div>
 );
 
