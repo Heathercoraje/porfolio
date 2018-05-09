@@ -6,10 +6,10 @@ const Header = () => (
   <div className="header">
     <div className="inner-container inner-header-container">
       <div className="inner-header-left">
-        <a href="/" className="tab">
+        <Link to="/" className="tab">
           <p className="name">Heuikyung Heather Yun</p>
           <p className="title"> &lt;/&gt; web developer &lt;/&gt;</p>
-        </a>
+        </Link>
       </div>
       <div className="inner-header-right">
         <ul>

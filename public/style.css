@@ -9,6 +9,8 @@ li {
   margin: 0;
   padding: 0;
   font-family: 'Gudea';
+  list-style: none;
+  letter-spacing: 1.2px;
 }
 
 a {
@@ -29,51 +31,185 @@ a {
   margin: 0 auto;
 }
 
+/* mobile0-first  */
+/* add smallest */
+@media only screen and (min-width: 320px) {
+  .header {
+    height: 470px;
+  }
+  .inner-container {
+    width: 87%;
+  }
+  .inner-header-container {
+    flex-direction: column;
+    height: 16vh;
+    padding: 20px 5px 10px 5px;
+  }
+  .inner-header-left {
+    text-align: center;
+  }
+  .name {
+    font-size: 22px;
+  }
+  .title {
+    font-size: 15px;
+  }
+  .inner-header-right > ul > li {
+    font-size: 15px;
+    margin: 0 10px;
+  }
+  .profileImage {
+    width: 150px;
+  }
+  .main-title {
+    font-size: 8vmin;
+  }
+  .main-article {
+    font-size: 4vmin;
+  }
+  .button-like {
+    padding: 8px 12px;
+    font-size: 3.5vmin;
+  }
+  .profile-social-links {
+    width: 55%;
+  }
+}
+
+/* here we need inbetween device */
+@media only screen and (min-width: 500px) {
+  .header {
+    height: 610px;
+  }
+  .inner-container {
+    width: 83%;
+  }
+  .inner-header-container {
+    flex-direction: column;
+    height: 15vh;
+    padding: 20px 5px 10px 5px;
+  }
+  .inner-header-right {
+    padding-top: 0;
+  }
+  .inner-header-right > ul > li {
+    margin: 0 20px;
+    font-size: 20px;
+  }
+  .name {
+    font-size: 30px;
+  }
+  .title {
+    visibility: visible;
+    font-size: 18px;
+  }
+  .profileImage {
+    width: 210px;
+  }
+  .main-title {
+    font-size: 5.8vmin;
+  }
+  .main-article {
+    font-size: 2.6vmin;
+  }
+}
+@media only screen and (min-width: 740px) {
+  .header {
+    height: 650px;
+  }
+  .inner-container {
+    width: 75%;
+    padding: 40px 5px 20px 5px;
+  }
+  .inner-header-container {
+    flex-direction: row;
+  }
+  .inner-header-right {
+    padding-top: 50px;
+  }
+  .inner-header-right > ul > li {
+    margin-left: 25px;
+  }
+  .profileImage {
+    width: 250px;
+  }
+  .main-title {
+    font-size: 5.8vmin;
+  }
+  .main-article {
+    font-size: 2.6vmin;
+  }
+  .button-like {
+    padding: 10px 40px;
+  }
+  .profile-social-links {
+    width: 25%;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .inner-container {
+    width: 70%;
+  }
+  .main-title {
+    font-size: 5.3vmin;
+  }
+  .main-article {
+    font-size: 2.3vmin;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .inner-container {
+    width: 63%;
+  }
+  .main-title {
+    font-size: 5.1vmin;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .inner-container {
+    width: 55%;
+  }
+}
+
+@media only screen and (min-width: 1350px) {
+  .inner-container {
+    width: 50%;
+  }
+}
 /* header */
-li {
+.inner-header-right > ul > li {
   list-style: none;
   display: inline-block;
-  margin-left: 25px;
-  font-size: 20px;
-  letter-spacing: 1.5px;
 }
 
 .inner-header-left > a,
 .inner-header-right > ul > li > a {
-  color: #eee;
+  color: #fff;
 }
 
 .header {
-  color: #eee;
-  height: 650px;
+  color: #fff;
   background-repeat: no-repeat;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url('../assets/bg.jpeg');
   background-size: 100%;
 }
 .inner-header-container {
-  height: 10vh;
-  padding: 40px 5px 20px 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px #eee solid;
+  border-bottom: 1px #fff solid;
 }
 .inner-header-left {
   float: left;
 }
-.inner-header-right {
-  padding-top: 50px;
-}
+
 .name {
   margin: 10px 0;
-  font-size: 30px;
-  letter-spacing: 1.5px;
 }
 .title {
   font-weight: 500;
   font-size: 18px;
-  letter-spacing: 1px;
 }
 
 .profileImage-container {
@@ -84,40 +220,31 @@ li {
 }
 .profileImage {
   border-radius: 50%;
-  width: 250px;
 }
 
 /* main */
-
 .main-title {
   color: #34a5b3;
-  font-size: 5vmin;
-  letter-spacing: 1.2px;
   margin-top: 50px;
 }
 .main-article {
   color: #222222;
-  font-size: 2.3vmin;
-  letter-spacing: 1px;
-  margin: 30px 0 40px 0;
+  margin: 30px 0 50px 0;
 }
 .pomotris-link {
   color: #34a5b3;
-  letter-spacing: 1.2px;
+  font-weight: 550;
 }
 .button-like {
   color: #34a5b3;
   font-weight: 700;
-  letter-spacing: 1.2px;
   border: 2px solid #34a5b3;
   border-radius: 5px;
-  padding: 10px 40px;
+  margin-right: 20px;
 }
-.button-like {
-  color: #34a5b3;
-}
+
 .button-like:hover {
-  color: #eee;
+  color: #fff;
   background-color: #34a5b3;
 }
 
@@ -134,7 +261,6 @@ li {
   height: 100%;
 }
 .profile-social-links {
-  width: 50%;
   height: 100%;
   margin: 0 auto;
   display: flex;
@@ -152,8 +278,8 @@ li {
 /* projects */
 
 .project-container {
-  padding: 25px 0 10px 0;
-  border-bottom: 0.3px solid #585858;
+  padding: 30px 0 10px 0;
+  border-bottom: 0.3px solid #bdbdbd;
 }
 
 .helper {
@@ -171,7 +297,7 @@ li {
   cursor: pointer;
 }
 .project-description {
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 .icons-container {
   margin-left: 15px;
