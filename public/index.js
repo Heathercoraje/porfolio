@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './style.css';
 import googleFonts from 'google-fonts';
-import App from './../src/app';
+import App from './../src/App';
 
 googleFonts.add({
   Gudea: ['400', '500', '700']

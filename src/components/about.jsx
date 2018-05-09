@@ -23,8 +23,8 @@ const About = () => (
       project to build infrustructure of solar power for sustainable schools in
       indigenous communities. <br />
       <br />
-      Heather practices yoga, trains for marathrons and recently started to
-      enjoy liftings. This year, she aims to try out thriathlon.<br />
+      Heather practices yoga, trains for marathons and recently started to enjoy
+      liftings. This year, she aims to try out thriathlon.<br />
       <br />
     </p>
     <a

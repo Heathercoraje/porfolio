@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "Simple portfolio for showcasing projects",
-  "main": "public/index.js",
+  "main": "index.js",
   "dependencies": {
     "classnames": "^2.2.5",
     "devicons": "^1.8.0",
@@ -38,8 +38,8 @@
   },
   "scripts": {
     "test": "jest",
-    "dev:start": "webpack-dev-server --config webpack.config/webpack.dev.config.js",
-    "build": "webpack --config webpack.config/webpack.prod.config.js",
+    "dev:start": "webpack-dev-server --config webpack.dev.config.js",
+    "build": "webpack --mode=production --config webpack.base.config.js",
     "lint": "eslint **/*.jsx"
   },
   "repository": {
