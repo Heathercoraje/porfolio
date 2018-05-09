@@ -92,6 +92,7 @@ a {
   .inner-header-right {
     padding-top: 0;
   }
+
   .inner-header-right > ul > li {
     margin: 0 20px;
     font-size: 20px;
@@ -124,6 +125,9 @@ a {
   .inner-header-container {
     flex-direction: row;
   }
+  .inner-header-left {
+    text-align: left;
+  }
   .inner-header-right {
     padding-top: 50px;
   }
@@ -141,6 +145,7 @@ a {
   }
   .button-like {
     padding: 10px 40px;
+    font-size: inherit;
   }
   .profile-social-links {
     width: 25%;
