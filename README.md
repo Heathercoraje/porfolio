@@ -1,3 +1,4 @@
 # portfolio
 
-Hi, nice to meet you. Click here and get to know me.
+Hi there! Good to meet you.
+Click [here](heathercoraje.surge.sh) and get to know me.

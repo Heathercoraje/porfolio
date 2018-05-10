@@ -19,7 +19,9 @@ class Header extends Component {
         <div className="inner-container inner-header-container">
           <div className="inner-header-left">
             <Link to="/">
-              <p className="name">Heuikyung Heather Yun</p>
+              <p className="name" onClick={() => this.addActive(null)}>
+                Heuikyung Heather Yun
+              </p>
               <p className="title"> &lt;/&gt; web developer &lt;/&gt;</p>
             </Link>
           </div>
