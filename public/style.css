@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 html,
 body,
 h1,
@@ -9,8 +12,11 @@ li {
   margin: 0;
   padding: 0;
   font-family: 'Gudea';
+  letter-spacing: 1.2px;
 }
-
+li {
+  list-style: none;
+}
 a {
   text-decoration: none;
   color: inherit;
@@ -18,161 +24,298 @@ a {
 .devicon {
   margin: 5px;
 }
-
 .socialIcon:hover,
-.tab:hover {
+.tab:hover,
+.active {
   color: #34a5b3;
 }
-/* core of mobile responsiveness */
-.inner-container {
-  width: 50%;
-  margin: 0 auto;
-}
 
-/* header */
-li {
-  list-style: none;
-  display: inline-block;
-  margin-left: 25px;
-  font-size: 20px;
-  letter-spacing: 1.5px;
-}
+/* mobile-first  */
+/* under iphone 6 and smaller than width 320px */
+/* 2 for xs devices */
 
-.inner-header-left > a,
-.inner-header-right > ul > li > a {
-  color: #eee;
-}
+@media only screen and (min-width: 250px) {
+  /* header */
+  .header {
+    height: 470px;
+    color: #fff;
+    background-repeat: no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+      url('../assets/bg.jpeg');
+    background-size: 100%;
+  }
+  .inner-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .inner-header-container {
+    text-align: center;
+    flex-direction: column;
+    height: 30%;
+    padding: 20px 5px;
+    border-bottom: 1px #fff solid;
+  }
+  .profileImage-container {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .inner-header-left {
+    text-align: center;
+  }
+  .name {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+  .name:hover {
+    color: #34a5b3;
+  }
+  .title {
+    font-size: 15px;
+    background-color: #34a5b3;
+  }
+  .inner-header-right {
+    padding-top: 20px;
+  }
+  .inner-header-right > ul > li {
+    font-size: 15px;
+    margin: 0 10px;
+    display: inline-block;
+  }
+  .profileImage {
+    border-radius: 50%;
+    width: 150px;
+  }
+  /* main */
+  .main-title {
+    font-size: 30px;
+    color: #34a5b3;
+    margin-top: 50px;
+  }
+  .main-article {
+    font-size: 16px;
+    color: #222222;
+    margin: 30px 0 50px 0;
+  }
+  .pomotris-link {
+    color: #34a5b3;
+    font-weight: 550;
+  }
+  .button-like {
+    width: 140px;
+    margin: 10px 0 0 0;
+    padding: 10px;
+    color: #34a5b3;
+    font-weight: 700;
+    display: block;
+    border: 2px solid #34a5b3;
+    border-radius: 5px;
+    font-size: 13px;
+  }
+  .button-like:hover {
+    color: #fff;
+    background-color: #34a5b3;
+  }
 
-.header {
-  color: #eee;
-  height: 650px;
-  background-repeat: no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url('../assets/bg.jpeg');
-  background-size: 100%;
-}
-.inner-header-container {
-  height: 10vh;
-  padding: 40px 5px 20px 5px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px #eee solid;
-}
-.inner-header-left {
-  float: left;
-}
-.inner-header-right {
-  padding-top: 50px;
-}
-.name {
-  margin: 10px 0;
-  font-size: 30px;
-  letter-spacing: 1.5px;
-}
-.title {
-  font-weight: 500;
-  font-size: 18px;
-  letter-spacing: 1px;
-}
+  /* project */
 
-.profileImage-container {
-  margin: 0 auto;
-  width: 50%;
-  padding: 10vh 0;
-  text-align: center;
-}
-.profileImage {
-  border-radius: 50%;
-  width: 250px;
-}
+  .project-container {
+    padding: 30px 0 10px 0;
+    border-bottom: 0.3px solid #bdbdbd;
+  }
 
-/* main */
+  .helper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .project-name:hover,
+  .devicon-github-plain:hover {
+    color: #34a5b3;
+    cursor: pointer;
+  }
+  .project-description {
+    margin-bottom: 25px;
+  }
 
-.main-title {
-  color: #34a5b3;
-  font-size: 5vmin;
-  letter-spacing: 1.2px;
-  margin-top: 50px;
-}
-.main-article {
-  color: #222222;
-  font-size: 2.3vmin;
-  letter-spacing: 1px;
-  margin: 30px 0 40px 0;
-}
-.pomotris-link {
-  color: #34a5b3;
-  letter-spacing: 1.2px;
-}
-.button-like {
-  color: #34a5b3;
-  font-weight: 700;
-  letter-spacing: 1.2px;
-  border: 2px solid #34a5b3;
-  border-radius: 5px;
-  padding: 10px 40px;
-}
-.button-like {
-  color: #34a5b3;
-}
-.button-like:hover {
-  color: #eee;
-  background-color: #34a5b3;
-}
+  .icons-container {
+    margin-top: 10px;
+  }
+  /* footer */
+  .footer-container {
+    width: 100vw;
+    height: 8vh;
+    background-color: gainsboro;
+    text-align: center;
+    margin-top: 8vh;
+    border-top: 1px solid #c3c3c3;
+  }
+  .profile-social-links {
+    width: 55%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: #585858;
+  }
 
-/* footer */
-.footer-container {
-  width: 100vw;
-  height: 8vh;
-  background-color: gainsboro;
-  text-align: center;
-  margin-top: 8vh;
-  border-top: 1px solid #c3c3c3;
+  .profile-social-links > li > a {
+    color: #585858;
+    font-size: 20px;
+  }
 }
-.footer {
-  height: 100%;
+/* px to vmin for font-size */
+@media only screen and (min-width: 370px) {
+  /* header */
+  .header {
+    height: 500px;
+  }
+  .inner-header-right > ul > li {
+    font-size: 4.5vmin;
+  }
+  .name {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  .profileImage {
+    width: 150px;
+  }
+  /* main */
+  .main-title {
+    font-size: 8vmin;
+  }
+  .main-article,
+  .title {
+    font-size: 4vmin;
+  }
 }
-.profile-social-links {
-  width: 50%;
-  height: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  color: #585858;
+/* tablet */
+@media only screen and (min-width: 500px) {
+  .header {
+    height: 650px;
+  }
+  .inner-container {
+    width: 83%;
+  }
+  .inner-header-container {
+    padding: 20px 5px;
+  }
+  .inner-header-right > ul > li {
+    margin: 0 20px;
+    font-size: 3vw;
+  }
+  .name {
+    font-size: 30px;
+  }
+  .title {
+    font-size: 3vw;
+  }
+  .profileImage {
+    width: 210px;
+  }
+  .main-title {
+    font-size: 5.8vmin;
+  }
+  .main-article {
+    font-size: 3vw;
+  }
+  .helper {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 25px;
+  }
+  .icons-container {
+    margin-left: 15px;
+    margin-top: 0;
+  }
+  .button-like {
+    display: inline;
+    font-size: 16px;
+    margin: 0 20px 0 0;
+  }
 }
+/* breakpoint */
+@media only screen and (min-width: 740px) {
+  .header {
+    height: 710px;
+    border-top: 5px solid #fff;
+  }
+  .inner-container {
+    width: 90%;
+    padding: 0 5px;
+  }
 
-.profile-social-links > li > a {
-  color: #585858;
-  font-size: 20px;
+  .inner-header-container {
+    height: 20%;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .profileImage-container {
+    height: 80%;
+  }
+  .inner-header-left {
+    float: left;
+  }
+  .inner-header-left {
+    text-align: left;
+  }
+  .inner-header-right {
+    padding-top: 25px;
+  }
+  .inner-header-right > ul > li {
+    margin-left: 25px;
+    font-size: 20px;
+  }
+  .name {
+    margin: 10px 0;
+  }
+  .profileImage {
+    width: 250px;
+  }
+  .main-article,
+  .title {
+    font-size: 2.3vmin;
+  }
+  .button-like {
+    padding: 10px 40px;
+  }
+  .profile-social-links {
+    width: 25%;
+  }
 }
-
-/* projects */
-
-.project-container {
-  padding: 25px 0 10px 0;
-  border-bottom: 0.3px solid #585858;
+@media only screen and (min-width: 800px) {
+  .inner-container {
+    width: 80%;
+  }
+  .main-title {
+    font-size: 5.3vmin;
+  }
 }
-
-.helper {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  margin-bottom: 25px;
-  font-size: 25px;
-  font-weight: 600;
+@media only screen and (min-width: 900px) {
+  .inner-container {
+    width: 70%;
+  }
+  .main-title {
+    font-size: 5.1vmin;
+  }
 }
-.project-name:hover,
-.devicon-github-plain:hover {
-  color: #34a5b3;
-  cursor: pointer;
+@media only screen and (min-width: 1200px) {
+  .inner-container {
+    width: 60%;
+  }
 }
-.project-description {
-  margin-bottom: 40px;
-}
-.icons-container {
-  margin-left: 15px;
+@media only screen and (min-width: 1350px) {
+  .inner-container {
+    width: 50%;
+  }
 }
