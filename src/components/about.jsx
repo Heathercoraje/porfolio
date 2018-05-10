@@ -6,17 +6,16 @@ const About = () => (
     <p className="main-article">
       Heather is a web developer at VERTICALJELLY SRL, a software house in
       Romania working on client-oriented contract based software for clients
-      around EU, currently building applications with nodeJS and React.<br />
+      around EU. She is currently building applications with nodeJS and React.<br />
       <br />
       Heather is interested in building intuitive UI and writing effective
       queries. She makes crafts using Javascript, php, python, nodeJS, React,
-      mySQL, PostgreSQL, MongoDB and more. She is a fan of Flexbox and CSS grid
-      for responsiveness. <br />
+      mySQL, PostgreSQL, MongoDB and more. She cares about testing. <br />
       <br />
       She graduated from a Founders and Coders, an intensive full-stack bootcamp
-      based in London and Nazareth, Israel. She enjoys to exercise
-      self-discipline to acheive what she wants or needs. Throughout the journey
-      of learning to code, she has learned to believe in the proccess. <br />
+      based in London and Nazareth, Israel. She enjoys self-discipline to
+      acheive what she wants or needs. She profoundly believes in the process.{' '}
+      <br />
       <br />
       Before deep dive into programming, Heather worked as a analyst in fields
       of Psychology using R. In 2015, she founded and operated a tour agency
