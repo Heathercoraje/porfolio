@@ -6,7 +6,7 @@ const Footer = () => (
     <ul className="profile-social-links">
       {socials.map(social => (
         <li key={social.name}>
-          <a href={social.url} className="socialIcon">
+          <a href={social.url} className="socialIcon" target="_blank">
             <i className={social.icon} />
           </a>
         </li>
