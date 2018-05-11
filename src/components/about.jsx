@@ -31,8 +31,7 @@ const About = () => (
     <a
       className="button-like"
       target="_blank"
-      href="cv_heathercoraje.pdf"
-      download
+      href="https://www.docdroid.net/vK70xPL/cv-heathercoraje.pdf"
     >
       Full Resume <i className="far fa-file-alt" />
     </a>

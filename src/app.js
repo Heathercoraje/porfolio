@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
 import Routes from './Routes';
 import './../assets/favicon.ico';
-import './../assets/cv_heathercoraje.pdf';
 import Header from './components/header';
 import Footer from './components/footer';
 
