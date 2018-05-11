@@ -1,9 +1,10 @@
 # Heathercoraje
 
-#### Hi there! I am Heather. Good to meet you.
+#### Hi there! :raising_hand: I am Heather. Good to meet you.
 
-Click [here](heathercoraje.surge.sh) to go my portfolio  
-Click [here](http://heathercoraje.surge.sh/about) to view my resume
+Click [here](http://heathercoraje.surge.sh) to go my portfolio.
+
+You will find my up-to-date resume in pdf and a list of projects I have built.
 
 Do you wish to connect to me directly?  
 Then just drop me an email at heathercoraje@gmail.com
