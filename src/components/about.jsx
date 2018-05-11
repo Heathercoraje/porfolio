@@ -31,7 +31,8 @@ const About = () => (
     <a
       className="button-like"
       target="_blank"
-      href="https://github.com/Heathercoraje/pomotris-vh"
+      href="cv_heathercoraje.pdf"
+      download
     >
       Full Resume <i className="far fa-file-alt" />
     </a>
