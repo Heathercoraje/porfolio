@@ -2,8 +2,9 @@
 
 #### Hi there! :raising_hand: I am Heather. Good to meet you.
 
-<img src="assets/cv_heathercoraje.png" width="900">
-Click [here](http://heathercoraje.surge.sh) to view my portfolio.
+<img src="./assets/cv_heathercoraje.png" width="900">
+Click [here](http://heathercoraje.surge.sh) to view my portfolio.  
+
 Click [here](https://www.docdroid.net/k4BRQQ2/cv-heathercoraje.pdf) to view/download my CV.
 
 Do you wish to connect to me directly?  
