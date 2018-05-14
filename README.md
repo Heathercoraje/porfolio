@@ -2,7 +2,7 @@
 
 #### Hi there! :raising_hand: I am Heather. Good to meet you.
 
-<img src="./assets/cv_heathercoraje.png" display="inline">  
+<img src="assets/cv_heathercoraje.png" display="inline">  
 
 Click [here](http://heathercoraje.surge.sh) to view my portfolio.
 
