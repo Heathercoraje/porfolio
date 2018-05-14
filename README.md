@@ -2,8 +2,12 @@
 
 #### Hi there! :raising_hand: I am Heather. Good to meet you.
 
-Click [here](http://heathercoraje.surge.sh) to see my portfolio.  
-You will find my resume in pdf and a list of projects I have built.
+<img src="assets/cv_heathercoraje.png" display="inline" width="900">  
+
+Click [here](http://heathercoraje.surge.sh) to view my portfolio.
+
+Click [here](https://www.docdroid.net/k4BRQQ2/cv-heathercoraje.pdf) to view/download my CV.
+
 
 Do you wish to connect to me directly?  
 Then just drop me an email at heathercoraje@gmail.com
