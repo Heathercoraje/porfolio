@@ -14,7 +14,7 @@ const Base = () => (
       </a>{' '}
       is a pomodoro timer web application with a cube chart which visualizes
       records with colorful cubes. Each cube represents 5 mins. A user can set a
-      color for each catagory of tasks. Currently, Heather is working on the
+      color for each category of tasks. Currently, Heather is working on the
       second sprint of Pomotris project.
     </p>
     <a

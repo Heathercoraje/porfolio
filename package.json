@@ -40,7 +40,8 @@
     "test": "jest",
     "dev:start": "webpack-dev-server --config webpack.dev.config.js",
     "build": "webpack --mode=production --config webpack.base.config.js",
-    "lint": "eslint **/*.jsx"
+    "lint": "eslint **/*.jsx",
+    "update": "surge --domain heathercoraje.surge.sh"
   },
   "repository": {
     "type": "git",
