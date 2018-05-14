@@ -14,17 +14,21 @@ class Project extends Component {
     return (
       <div className="project-container">
         <div className="helper">
-          <p className="project-name" onClick={() => this.openProject(url)}>
-            {name}
-          </p>
-          <div className="icons-container">
+          <div className="projectTitle-left">
+            <p className="project-name" onClick={() => this.openProject(url)}>
+              {name}
+            </p>
             <i
               className="devicon devicon-github-plain"
               onClick={() => this.openGithub(github)}
             />
-            {icons.map(icon => (
-              <i className={icon.className} key={icon.name} />
-            ))}
+          </div>
+          <div className="projectTitle-right">
+            <div className="icons-container">
+              {icons.map(icon => (
+                <i className={icon.className} key={icon.name} />
+              ))}
+            </div>
           </div>
         </div>
         <p className="project-description">{description}</p>
@@ -41,7 +45,7 @@ class OpenSourceProject extends Component {
     const { name, github, description } = this.props;
     return (
       <div className="project-container">
-        <div className="helper">
+        <div className="projectTitle-left">
           <p className="project-name">{name}</p>
           <i
             className="devicon devicon-github-plain"

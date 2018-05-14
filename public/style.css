@@ -22,7 +22,7 @@ a {
   color: inherit;
 }
 .devicon {
-  margin: 5px;
+  margin-right: 10px;
 }
 .socialIcon:hover,
 .tab:hover,
@@ -114,6 +114,7 @@ a {
     border-radius: 5px;
     font-size: 13px;
   }
+
   .button-like:hover {
     color: #fff;
     background-color: #34a5b3;
@@ -130,8 +131,17 @@ a {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
-    font-size: 20px;
     font-weight: 600;
+  }
+  .projectTitle-left {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .project-name {
+    margin-right: 10px;
   }
   .project-name:hover,
   .devicon-github-plain:hover {
@@ -142,9 +152,6 @@ a {
     margin-bottom: 25px;
   }
 
-  .icons-container {
-    margin-top: 10px;
-  }
   /* footer */
   .footer-container {
     width: 100%;
@@ -220,16 +227,12 @@ a {
     font-size: 3vw;
   }
   .helper {
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
     margin-bottom: 25px;
     font-size: 25px;
   }
-  .icons-container {
-    margin-left: 15px;
-    margin-top: 0;
-  }
+
   .button-like {
     display: inline;
     font-size: 16px;
@@ -292,6 +295,9 @@ a {
   }
   .main-title {
     font-size: 5.3vmin;
+  }
+  .projectTitle-left {
+    font-size: 25px;
   }
 }
 @media only screen and (min-width: 900px) {
